@@ -31,6 +31,19 @@ If you don't use gcc, you'll have to configure the `Makefile` and set your defau
 ./a.out [YOUR IMAGE]
 ```
 
+## Using your own custom ASCII set
+
+By default, the program will use its own ASCII set that I've built into the program. However, if you want to use your own ASCII set, you'll need to modify the `main.c` file and setup the following changes:
+
+```
+// Testing purposes if you want to use your own custom ascii set
+char Custom_ASCII[] = "SETUP YOUR OWN CUSTOM ASCII SET HERE";
+
+render_image_to_ascii(&width, &height, &nrChannels, &data, Custom_ASCII);
+```
+
+The `ascii-art.h` file should detail the parameter values and what they mean to help assist you in your journey.
+
 ## Resources I used
 
 > https://stackoverflow.com/questions/50079/c-image-library
