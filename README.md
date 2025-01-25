@@ -14,7 +14,16 @@ This ASCII art was made from the Ruby logo, credit goes to them: (https://www.ru
 ```
 git clone https://github.com/nothings/stb
 ```
-2. Make sure that the stb library is in the same directory as the other files in this program so you won't have many issues. If you do put the stb library in a different PATH, you will need to modify the preprocessors to match such change
+2. Make sure that the stb library is in the same directory as the other files in this program so you won't have many issues. If you do put the stb library in a different PATH, you will need to modify the preprocessors and the Makefile to match such change.
+
+## Compiling the program
+
+If gcc is your main compiler:
+```
+make
+```
+
+If you don't use gcc, you'll have to configure the `Makefile` and set your default compiler that way.
 
 ## Running the program
 
