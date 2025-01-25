@@ -68,7 +68,7 @@ The `ascii-art.h` file should detail the parameter values and what they mean to 
 >
 > https://stackoverflow.com/questions/48235421/get-rgb-of-a-pixel-in-stb-image
 >
-> https://medium.com/@shubham0473/unleash-your-inner-artist-a-step-by-step-guide-to-converting-images-to-ascii-art-using-java-97860464f19a#:~:text=To do this%2C we first,is like a brush stroke.
+> https://medium.com/@shubham0473/unleash-your-inner-artist-a-step-by-step-guide-to-converting-images-to-ascii-art-using-java-97860464f19a
 >
 > https://stackoverflow.com/questions/6984722/generic-algorithm-to-get-and-set-the-brightness-of-a-pixel
 >
