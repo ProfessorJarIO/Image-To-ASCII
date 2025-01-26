@@ -35,4 +35,4 @@ int free_image(unsigned char** data);
  * char* ASCII_set - Holds an array of characters that will represent the ASCII set that the program will use to represent dark and light pixels. If this parameter is NULL, the program will use its default ASCII set.
  *
 */
-int render_image_to_ascii(int width, int height, int nrChannels, unsigned char** data, char* ASCII_set);
+int render_image_to_ascii(const int width, const int height, const int nrChannels, unsigned char** data, char* ASCII_set);
