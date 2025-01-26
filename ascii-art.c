@@ -25,7 +25,7 @@ int free_image(unsigned char** data) {
 
 
 // The purpose of ASCII_SET is to allow users to specify their own ascii_set if they want. I will create a default value however in case the user wants to use the default
-int render_image_to_ascii(int width, int height, int nrChannels, unsigned char** data, char* ASCII_set) {
+int render_image_to_ascii(const int width, const int height, const int nrChannels, unsigned char** data, char* ASCII_set) {
 	if (ASCII_set == NULL) {
 		ASCII_set = ASCII;
 	}
