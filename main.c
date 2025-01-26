@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
 	// Testing purposes if you want to use your own custom ascii set
 	// char Custom_ASCII[] = " `0#$";
 
-	render_image_to_ascii(&width, &height, &nrChannels, &data, NULL);
+	render_image_to_ascii(width, height, nrChannels, &data, NULL);
 
 	// Free image from memory
 	free_image(&data);
