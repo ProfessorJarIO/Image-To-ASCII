@@ -28,9 +28,9 @@ int free_image(unsigned char** data);
 /*
  * This function converts a file loaded in memory into ASCII art
  *
- * int width - Holds the width of the image you loaded in memory
- * int height - Holds the height of the image you loaded in memory
- * int nrChannels - Holds the amount of components per pixel from the image you loaded in memory
+ * const int width - Holds the width of the image you loaded in memory
+ * const int height - Holds the height of the image you loaded in memory
+ * const int nrChannels - Holds the amount of components per pixel from the image you loaded in memory
  * unsigned char** data - Pointer to where your loaded image is in memory
  * char* ASCII_set - Holds an array of characters that will represent the ASCII set that the program will use to represent dark and light pixels. If this parameter is NULL, the program will use its default ASCII set.
  *
