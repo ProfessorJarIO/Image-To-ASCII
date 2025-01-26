@@ -25,7 +25,7 @@ int free_image(unsigned char** data) {
 
 
 // The purpose of ASCII_SET is to allow users to specify their own ascii_set if they want. I will create a default value however in case the user wants to use the default
-int render_image_to_ascii(int* width, int* height, int* nrChannels, unsigned char** data, char* ASCII_set) {
+int render_image_to_ascii(int width, int height, int nrChannels, unsigned char** data, char* ASCII_set) {
 	if (ASCII_set == NULL) {
 		ASCII_set = ASCII;
 	}
@@ -37,9 +37,9 @@ int render_image_to_ascii(int* width, int* height, int* nrChannels, unsigned cha
 
 	// We need to get the RGB value from each pixel:
 
-	for (int y=0; y<(*height); y++) {
-		for (int x=0; x<(*width); x++) {
-			int index = (y * (*width) + x) * (*nrChannels);
+	for (int y=0; y<height; y++) {
+		for (int x=0; x<width; x++) {
+			int index = (y * width + x) * nrChannels;
 			unsigned char r = (*data)[index + 0];
 			unsigned char g = (*data)[index + 1];
 			unsigned char b = (*data)[index + 2];
